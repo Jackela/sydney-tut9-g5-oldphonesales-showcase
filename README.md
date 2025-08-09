@@ -40,17 +40,17 @@ The following screenshots are provided as evidence of my work on the original pr
 ### A. Contributor Statistics
 *(This image shows the contribution graph from the private repository, highlighting team activity.)*
 
-![Contributor Graph](./.meta/contributors.png)
+![Contributor Graph](./_meta/contributors.png)
 
 ### B. Personal Commit History
 *(A snapshot of my personal commit log, demonstrating my development process and specific contributions.)*
 
-![Commit History](./.meta/commits.png)
+![Commit History](./_meta/commits.png)
 
 ### C. Project Team Homepage
 *(The project's main page on the private university GitHub, showing all team members.)*
 
-![Project Homepage](./.meta/homepage.png)
+![Project Homepage](./_meta/homepage.png)
 
 ## 🚀 Installation & Usage
 
