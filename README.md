@@ -14,7 +14,13 @@ This project aimed to deliver a complete, functional full-stack e-commerce platf
 *   **User Authentication**: Implemented a secure user authentication system using **JWT (JSON Web Tokens)** for managing user sessions and access control.
 *   **API Documentation**: API endpoints are clearly documented using **Swagger**, facilitating easy integration and understanding for other developers.
 
-## 👤 My Role & Contributions
+## 👥 Team & My Contributions
+
+This project was a collaborative effort by the following team members:
+*   @yliu0826
+*   @wkon0621
+*   @zwan0933
+*   @yixu4396
 
 As a key developer, I was responsible for implementing core backend features, including the user authentication system with JWT, designing and building product-related RESTful APIs, and documenting the API endpoints with Swagger.
 
@@ -27,6 +33,25 @@ As a key developer, I was responsible for implementing core backend features, in
 ![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=json-web-tokens&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=white)
 
+## 🏆 Proof of Contribution
+
+The following screenshots are provided as evidence of my work on the original private repository.
+
+### A. Contributor Statistics
+*(This image shows the contribution graph from the private repository, highlighting team activity.)*
+
+![Contributor Graph](./.meta/contributors.png)
+
+### B. Personal Commit History
+*(A snapshot of my personal commit log, demonstrating my development process and specific contributions.)*
+
+![Commit History](./.meta/commits.png)
+
+### C. Project Team Homepage
+*(The project's main page on the private university GitHub, showing all team members.)*
+
+![Project Homepage](./.meta/homepage.png)
+
 ## 🚀 Installation & Usage
 
 Follow these steps to set up and run the project:
@@ -34,8 +59,8 @@ Follow these steps to set up and run the project:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Jackela/TUT9-G5.git
-cd TUT9-G5/old-phone-deals # Navigate to the core project directory
+git clone https://github.com/YOUR_USERNAME/sydney-tut9-g5-oldphonesales-showcase.git
+cd sydney-tut9-g5-oldphonesales-showcase # Navigate to the project directory
 ```
 
 ### 2. Install Dependencies
@@ -44,7 +69,7 @@ Navigate to both the client (frontend) and server (backend) directories and inst
 
 ```bash
 # For the backend
-cd server
+cd old-phone-deals/server
 npm install
 
 # For the frontend
@@ -62,7 +87,7 @@ Start both the backend and frontend servers.
 
 ```bash
 # Start the backend server
-cd server
+cd old-phone-deals/server
 npm start
 
 # Start the frontend development server
