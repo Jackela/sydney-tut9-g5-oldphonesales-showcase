@@ -1,20 +1,20 @@
 # E-commerce Platform for Used Phones (TUT9-G5)
 
-A full-stack e-commerce platform for selling used phones, built with the MERN stack.
+A team course project for selling used phones, built with MongoDB, Express, React, and Node.js. AI-assisted maintenance currently focuses on the repository documentation; the application has not been rerun for this update.
 
 ## 📖 Project Goal & Motivation
 
-This project aimed to deliver a complete, functional full-stack e-commerce platform specifically designed for selling used phones. The motivation was to gain practical experience in building modern web applications using a popular technology stack and implementing core e-commerce functionalities.
+This project implements used-phone listings, user accounts, shopping-cart and order flows, and administration pages. It was developed to practice full-stack web application development.
 
 ## 🏗️ Architecture & Technical Highlights
 
-*   **MERN Stack Application**: Developed using the **MERN stack** (**MongoDB**, **Express.js**, **React**, **Node.js**), providing a robust and scalable foundation for web development.
-*   **RESTful API Backend**: Features a powerful **Node.js** and **Express.js** backend that exposes a **RESTful API** for all data operations, ensuring clear separation of concerns and efficient data exchange.
-*   **Dynamic React Frontend**: A dynamic and interactive user interface built with **React**, offering a smooth and responsive user experience.
-*   **User Authentication**: Implemented a secure user authentication system using **JWT (JSON Web Tokens)** for managing user sessions and access control.
-*   **API Documentation**: API endpoints are clearly documented using **Swagger**, facilitating easy integration and understanding for other developers.
+*   **MERN Stack Application**: MongoDB/Mongoose data storage, an Express backend, and a React frontend built with Vite.
+*   **RESTful API Backend**: Includes routes for accounts, phone listings, carts, orders, and administration.
+*   **React Frontend**: Includes browsing, profile, cart, and administration pages.
+*   **User Authentication**: Includes session-based access checks and JWT email-verification tokens.
+*   **API Documentation**: Includes Swagger configuration and a Postman collection.
 
-## 👥 Team & My Contributions
+## 👥 Team & Contributions
 
 This project was a collaborative effort by the following team members:
 *   @yliu0826
@@ -22,7 +22,7 @@ This project was a collaborative effort by the following team members:
 *   @zwan0933
 *   @yixu4396
 
-As a key developer, I was responsible for implementing core backend features, including the user authentication system with JWT, designing and building product-related RESTful APIs, and documenting the API endpoints with Swagger.
+The source includes account and listing APIs, authentication flows, and Swagger configuration. Historical contribution screenshots are retained below.
 
 ## 🛠️ Tech Stack
 
@@ -59,41 +59,42 @@ Follow these steps to set up and run the project:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/sydney-tut9-g5-oldphonesales-showcase.git
+git clone https://github.com/Jackela/sydney-tut9-g5-oldphonesales-showcase.git
 cd sydney-tut9-g5-oldphonesales-showcase # Navigate to the project directory
 ```
 
 ### 2. Install Dependencies
 
-Navigate to both the client (frontend) and server (backend) directories and install their respective dependencies.
+From the repository root, install the backend and frontend dependencies:
 
 ```bash
-# For the backend
-cd old-phone-deals/server
-npm install
-
-# For the frontend
-cd ../client
-npm install
+npm --prefix old-phone-deals/server install
+npm --prefix old-phone-deals/client install
 ```
 
-### 3. Configure Environment Variables
+### 3. Configure the Backend
 
-Create a `.env` file in the appropriate directories (e.g., `server/.env`) and add necessary environment variables (e.g., MongoDB URI, JWT secret).
+Create `old-phone-deals/server/.env` with `MONGODB_URI`, `SESSION_SECRET`, and `JWT_SECRET`. MongoDB must be available before the backend can start. Email verification and password reset also require the mail settings read by `old-phone-deals/server/service/emailService.js`, including `FRONTEND_URL`.
+
+The backend defaults to port `7777`; the frontend API client uses `http://localhost:7777/api`. The backend CORS configuration expects the frontend at `http://localhost:5173`.
 
 ### 4. Run the Application
 
-Start both the backend and frontend servers.
+Run each command in a separate terminal, from the repository root. The working directory matters because the backend loads `.env` from its current directory.
 
 ```bash
-# Start the backend server
+# Backend: package.json start script runs node server.js
 cd old-phone-deals/server
 npm start
+```
 
-# Start the frontend development server
-cd ../client
+```bash
+# Frontend: package.json start script runs Vite
+cd old-phone-deals/client
 npm start
 ```
+
+The frontend also defines `npm run build` and `npm run serve` for a build and local preview. These instructions were checked against the source and package scripts; MongoDB, email flows, and browser behavior were not exercised for this README update.
 
 ## 📄 License
 
